@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+	<head>
+		<title>recruitment Questionaries</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
+
+		
+		<style>
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				padding-left : 30px;
+				padding-right: 30px;
+				padding-top : 10px;
+				padding-bottom : 10px;
+				border-spacing: 30px;
+  
+				}
+			table{
+			margin : 0 auto;
+			width : 100%;
+			}
+			select{
+				width : 200px;
+			}
+			</style>
+	
+		
+	</head>
+	<body>
+
+	<div id="container" align="right" >
+		<img src="img/cis.jpg" alt=""  width = "200" height = "100" />
+	</div>
+	
+	<div class="container">
+	<div class="row">
+		<div class = "col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading" align = "center" style="background-color:#030456;">
+					<font face = "Times New Roman">
+						<h1>Help us get to know you better.</h1>
+					</font>
+				</div>	
+			</div>	
+		</div>
+	</div>
+	</div>
+	
+	<div class="container">
+	<div class="row">
+	<div class = "col-sm-12">
+		<div>
+			<form action="">
+				<table>
+					<tr style="background-color:#030456;">
+						<div class="">
+							<td colspan = "2" align="center">	
+								<label class="name" ><font face = "Times New Roman"color = "white"><h3>Recruitment Questionaries</h3></font></label>			
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>				
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Salutation</b></font></label>		
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<select ID = "salutation" name = "salutation">
+									<OPTION value = ""></option>
+									<OPTION VALUE = "Online">Mr.</option>
+									<OPTION VALUE = "Consultancy">Ms.</option>
+									<OPTION VALUE = "Reference">Mrs.</option>
+								</select>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Name</b></font></label>	
+							</td>
+						</div>
+						<div>
+							<td>					
+								<INPUT id = "salutation" TYPE = "TEXT" NAME = "salutation" size = "40"  AUTOFOCUS REQUIRED placeholder= "this will auto filled">	
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Father's Name</b></font></label>						
+							</td>
+						</div>
+						<div>
+							<td>					
+								<INPUT id = "fathername" TYPE = "TEXT" NAME = "fathername" size = "40"  AUTOFOCUS REQUIRED>
+							</td>
+						</div>	
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Father's Occupation</b></font></label>					
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<INPUT TYPE = "text" NAME = "fatheroccupation" size = "40" AUTOFOCUS REQUIRED>	
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Mother's Name</b></font></label>	
+							</td>
+						</div>
+						<div class="">
+							<td>	
+								<input id="mothername" name = "mothername" size = "40" autofocus required>	
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Mother's Occupation</b></font></label>								
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<select ID = "motheroccupation" name = "motheroccupation" onchange = "showtxtbox('motheroccupation','motheroccupationtxtbox')">
+									<OPTION value = ""></option>
+									<OPTION VALUE = "Home-Maker">Home-Maker</option>
+									<OPTION VALUE = "Others">Others</option>	
+								</select> &nbsp &nbsp &nbsp
+								<span id = "motheroccupationtxtbox" style = "visibility:hidden">
+									<input type = "text" size = "40">
+								</span>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Do you have siblings?</b></font></label>					
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<input id = "yessibling" type="radio" name="siblings" value = "1" onchange = "showsiblings('yessibling','nosibling','brother','sister')"> Yes
+								<input id = "nosibling" type="radio" name="siblings" value = "0" onchange = "showsiblings('yessibling','nosibling','brother','sister')"> No	
+								<span id = "brother" style = "visibility:hidden">
+									&nbsp &nbsp # of Brother('s) &nbsp <INPUT TYPE = "number" NAME = "numberofbrothers" style="width: 40px;" AUTOFOCUS REQUIRED>	
+									<input type = "text" size = "20" AUTOFOCUS REQUIRED placeholder = "Occupation">
+								</span>
+								<span id = "sister" style = "visibility:hidden">
+									&nbsp &nbsp # of Sister('s) &nbsp <INPUT TYPE = "number" NAME = "numberofsisters" style="width: 40px;" AUTOFOCUS REQUIRED >	
+									<input type = "text" size = "20" AUTOFOCUS REQUIRED placeholder = "Occupation">
+								</span>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Marital Status</b></font></label>					
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<select ID = "Maritalstatus" name = "Maritalstatus" style = "width:125px" onchange = "showSpouseDetails('Maritalstatus','spousename','spouseoccupation')">
+									<OPTION value = ""></option>
+									<OPTION VALUE = "Single">Single</option>
+									<OPTION VALUE = "Engaged">Engaged</option>
+									<OPTION VALUE = "Married">Married</option>
+									<OPTION VALUE = "Separated">Separated</option>
+									<OPTION VALUE = "Divorced">Divorced</option>
+									<OPTION VALUE = "Widowed">Widowed</option>
+								</select> &nbsp &nbsp &nbsp
+								<span id = "spousename" style = "visibility:hidden">
+									&nbsp &nbsp	<input type = "text" size = "25" AUTOFOCUS REQUIRED placeholder = "Enter Spouse's Name">
+								</span>
+								<span id = "spouseoccupation" style = "visibility:hidden">
+									&nbsp &nbsp 
+									<select ID = "maritalstatus" name = "maritalstatus" style = "width:125px" onchange = "showtxtbox('maritalstatus','spouseotheroccupation')">
+									<OPTION value = ""></option>
+									<OPTION VALUE = "Home-Maker">Home-Maker</option>
+									<OPTION VALUE = "Others">Others</option>
+									</select>&nbsp &nbsp
+									<span id = "spouseotheroccupation" style = "visibility:hidden">
+										&nbsp &nbsp	<input type = "text" size = "25" AUTOFOCUS REQUIRED placeholder = "Enter Occupation">
+									</span>
+								</span>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Do you have child(ren)?</b></font></label>					
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<input id = "yeschild" type="radio" name="child" value = "1" onchange = "showChild('yeschild','nochild','son','daughter','planing')"> Yes
+								<input id = "nochild" type="radio" name="child" value = "0" onchange = "showChild('yeschild','nochild','son','daughter','planing')"> No	
+								<span id = "son" style = "visibility:hidden">
+									&nbsp &nbsp # of Sons('s) &nbsp <INPUT TYPE = "number" NAME = "numberofson" style="width: 50px;" AUTOFOCUS REQUIRED>	
+									 <INPUT TYPE = "number" NAME = "ageofson" style="width: 50px;" AUTOFOCUS REQUIRED placeholder="age">
+								</span>
+								<span id = "daughter" style = "visibility:hidden">
+									&nbsp &nbsp # of Daughter('s) &nbsp <INPUT TYPE = "number" NAME = "numberofdaughter" style="width: 50px;" AUTOFOCUS REQUIRED >	
+									 <INPUT TYPE = "number" NAME = "ageofdaughter" style="width: 50px;" AUTOFOCUS REQUIRED placeholder="age">
+								</span>
+								<span id = "planing" style = "visibility:hidden">
+									&nbsp &nbsp &nbsp 
+									 <INPUT TYPE = "text" NAME = "ageofdaughter" size = "30" placeholder="When are you planning to have kids?" AUTOFOCUS REQUIRED>
+								</span>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Current Location</b></font></label>								
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<select ID = "currentlocation" name = "currentlocation">
+									<OPTION value = ""></option>
+									<OPTION VALUE = "North Kolkata">North Kolkata</option>
+									<OPTION VALUE = "South Kolkata">South Kolkata</option>
+									<OPTION VALUE = "Central Kolkata">Central Kolkata</option>
+									<OPTION VALUE = "Howrah">Howrah</option>
+									<OPTION VALUE = "North 24 Parganas">North 24 Parganas</option>
+									<OPTION VALUE = "South 24 Parganas">South 24 Parganas</option>
+								</select>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="locality">
+							<td>	
+								<label style="color: red">*</label>
+								<label><font face = "Times New Roman" size = "4"><b>Locality of Residence</b></font></label>	
+							</td>
+						</div>
+						<div class="">
+							<td>	
+								<input type = "text" id="locality" name = "locality" size = "40" autofocus required>	
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="timeestimated">
+							<td>	
+								<label style="color: red">*</label>
+								<label><font face = "Times New Roman" size = "4"><b>Time estimated to reach our office daily</b></font></label>	
+							</td>
+						</div>
+						<div class="">
+							<td>	
+								<INPUT TYPE = "number" NAME = "timeestimated" style="width: 50px;" AUTOFOCUS REQUIRED >	&nbsp &nbsp minutes
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Mode of Transport preefered</b></font></label>								
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<select ID = "modeoftransport" name = "modeoftransport">
+									<OPTION value = ""></option>
+									<OPTION VALUE = "Metro">Metro</option>
+									<OPTION VALUE = "Auto">Auto</option>
+									<OPTION VALUE = "Bus">Bus</option>
+									<OPTION VALUE = "Train">Train</option>
+									<OPTION VALUE = "Two-wheeler">Two-wheeler</option>
+									<OPTION VALUE = "Four-wheeler">Four-wheeler</option>
+								</select>
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Is anyone in your family a CA and/ or an MBA?</b></font></label>					
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<input id = "yesca" type="radio" name="ca" value = "1" onchange = "showSpanOnRadio(this.id,'noca','family')"> Yes
+								<input id = "noca" type="radio" name="ca" value = "0" onchange = "showSpanOnRadio('yesca','noca','family')"> No	 &nbsp &nbsp &nbsp
+								<span id = "family" style = "visibility:hidden">
+									<select ID = "familymember" name = "familymember">
+										<OPTION value = ""></option>
+										<OPTION VALUE = "Father">Father</option>
+										<OPTION VALUE = "Mother">Mother</option>
+										<OPTION VALUE = "Brother">Brother</option>
+										<OPTION VALUE = "Sister">Sister</option>
+										<OPTION VALUE = "Spouse">Spouse</option>
+										<OPTION VALUE = "Others">Others</option>
+									</select>
+									<INPUT TYPE = "text" NAME = "qualification" size = "30" placeholder="Enter qualification" AUTOFOCUS REQUIRED>
+								</span>
+								
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label><font face = "Times New Roman" size = "4"><b>"What are your plans in the next 2 years? (Short-term plans)"</b></font></label>	
+							</td>
+						</div>
+						<div class="">
+							<td colspan = "2">
+								
+								<textarea style = "width:500px"></textarea>
+								<script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
+								<script>
+									autosize(document.querySelectorAll('textarea'));
+								</script>	
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label><font face = "Times New Roman" size = "4"><b>"What are your plans in the next 5-10 years? (Long-term plans)"</b></font></label>	
+							</td>
+						</div>
+						<div class="">
+							<td colspan = "2">
+								
+								<textarea style = "width:500px"></textarea>
+								<script src='https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.15/autosize.min.js'></script>
+								<script>
+									autosize(document.querySelectorAll('textarea'));
+								</script>	
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Do you suffer from any medical issues - physical or mental?</b></font></label>					
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<input id = "yesissue" type="radio" name="issue" value = "1" onchange = "showSpanOnRadio(this.id,'noissue','medicalissue')"> Yes
+								<input id = "noissue" type="radio" name="issue" value = "0" onchange = "showSpanOnRadio('yesissue','noissue','medicalissue')"> No	&nbsp &nbsp &nbsp
+								<span id = "medicalissue" style = "visibility:hidden">
+									<input type="checkbox" name="physicalissue" value="physical"> Physical
+									<input type="checkbox" name="mentalissue" value="Mental"> Mental
+									<INPUT TYPE = "text" NAME = "medicalissue" size = "30" placeholder="Enter issue" AUTOFOCUS REQUIRED>
+								</span>
+								
+							</td>
+						</div>
+					</tr>
+					<tr>
+						<div class="">
+							<td>	
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Are you pursuing any professional course(s)?</b></font></label>					
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<input id = "yescourse" type="radio" name="course" value = "1" onchange = "showSpanOnRadio(this.id,'nocourse','professionalcourse')"> Yes
+								<input id = "nocourse" type="radio" name="course" value = "0" onchange = "showSpanOnRadio('yescourse','nocourse','professionalcourse')"> No	 &nbsp &nbsp &nbsp
+								
+							</td>
+						</div>
+					</tr>
+					<tr id = "professionalcourse" style = "visibility:hidden">
+						<div class="">
+							<td>
+								<div>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Which course(s)?</b></font></label>	
+								</div>
+								<div>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>Last examination stage cleared</b></font></label>	
+								</div>
+								<div>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>When do you plan to take your next examination?</b></font></label>	
+								</div>
+								<div>
+								<label style="color: red">*</label>
+								<label class="name"><font face = "Times New Roman" size = "4"><b>How many days leave will you need - study leave + exam leave?</b></font></label>	
+								</div>
+							</td>
+						</div>
+						<div class="">
+							<td>
+								<div class="form-group">
+									
+									<select id="framework" name="framework[]" multiple class="form-control" >
+										<option value="Codeigniter">Codeigniter</option>
+										<option value="CakePHP">CakePHP</option>
+										<option value="Laravel">Laravel</option>
+										<option value="YII">YII</option>
+										<option value="Zend">Zend</option>
+										<option value="Symfony">Symfony</option>
+										<option value="Phalcon">Phalcon</option>
+										<option value="Slim">Slim</option>
+									</select>
+								</div>
+								
+							</td>
+						</div>
+					</tr>
+					
+					
+					
+						</table>
+						<br>
+						<div style="text-align:center">  
+							<INPUT TYPE = "SUBMIT" VALUE = "NEXT" style="height:40px; width:100px"> 
+						</div> 
+					</form>
+
+				</div>	
+		
+	</div>
+	</div>
+	</div>
+	
+	<script src = "js/candidate.js" type = "text/javascript"></script>
+	</body>
+</html>
+
+<script>
+$(document).ready(function(){
+ $('#framework').multiselect({
+  nonSelectedText: 'Select Framework',
+  enableFiltering: true,
+  enableCaseInsensitiveFiltering: true,
+  buttonWidth:'400px'
+ });
+ 
+
+ 
+});
+</script>
